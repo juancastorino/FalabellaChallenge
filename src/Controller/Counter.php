@@ -43,7 +43,7 @@ class Counter
             'numbersData' => $this->initLoop()
         );
 
-        $view = new CounterView(__DIR__.'/../view/template/counter.php', $data);
+        $view = new CounterView(__DIR__.'/../View/Template/counter.php', $data);
         $view->render();
     }
 

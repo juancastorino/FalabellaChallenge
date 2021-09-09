@@ -38,7 +38,7 @@
     </div>
     <div class='container d-flex justify-content-center'>
             <a class="col-5 navbar-brand btn btn-success mb-5" href="./index.php">Go back</a>
-            <a class="col-5 navbar-brand btn btn-danger mb-5" href="./index.php">Go to Github</a>
+            <a class="col-5 navbar-brand btn btn-danger mb-5" href="https://github.com/juancastorino/FalabellaChallenge">Go to Github</a>
         </div>
 </body>
 
