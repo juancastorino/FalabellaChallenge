@@ -29,7 +29,7 @@ class CounterTest extends TestCase
     {
         $counter = new Counter(3, 15);
         $result = $counter->initLoop()[15];
-        $this->assertSame('Integracion', $result);
+        $this->assertSame('Integraciones', $result);
     }
 
     public function testStartGreaterThanEndParameter()

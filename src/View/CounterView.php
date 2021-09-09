@@ -1,21 +1,12 @@
 <?php
 
 namespace App\View;
+use App\Core\View;
 
-class CounterView
+class CounterView extends View
 {
-    protected $data;
-    protected $html;
-    protected $template;
 
-    function __construct($template, $data = [] , $html = '')
-    {
-        $this->data = $data;
-        $this->html = $html;
-        $this->template = $template; 
-    }
-
-    function parseHtml($data)
+    function parseHtml(array $data): string
     {
         $html = '';
         
@@ -29,23 +20,6 @@ class CounterView
         }
 
         return $html;
-    }
-
-    function parseTemplate()
-    {
-        $this->html = file_get_contents($this->template);
- 
-        foreach ($this->data as $key => $value) {
-
-            $this->html = str_replace("{{ $key }}",$this->parseHtml($value), $this->html);
-        }
-        
-    }
-
-    function render()
-    {
-        $this->parseTemplate();
-         echo $this->html;
     }
 
 }

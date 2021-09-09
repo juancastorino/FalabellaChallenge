@@ -14,7 +14,7 @@
         <div class="container-fluid">
             <img src="https://images.contentstack.io/v3/assets/blt928898215b35efe2/blt0daf5895f6b8b295/60e7235936954912f039847b/sis-fcom-logo.svg"
                 alt="fallabella" width="200" height="auto">
-            <a class="navbar-brand" href="./index.php">Volver</a>
+            <a class="navbar-brand" href="./index.php">Go back</a>
         </div>
     </nav>
 

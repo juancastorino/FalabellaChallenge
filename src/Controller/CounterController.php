@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controller;
 
 use App\View\CounterView;
 
@@ -12,8 +12,21 @@ class Counter
     protected $commonMultiple;
     protected $allMultiplesFoundedText;
     
-    
-    public function __construct($start = 1, $end = 100, $stringsToReplace = array(3 => 'Falabella',5 => 'IT'), $commonMultipleText = 'Integracion')
+    /**
+    * Counter constructor.
+    * @param int $start
+    * @param int $end
+    * @param array $stringsToReplace
+    * @param string $commonMultipleText
+    * 
+    */
+    public function __construct
+    (
+        int $start = 1, 
+        int $end = 100, 
+        array $stringsToReplace = array(3 => 'Falabella',5 => 'IT'), 
+        string $commonMultipleText = 'Integracion'
+    )
     {
         $orderedInputs = $this->orderInputs($start, $end);
         $this->start = $orderedInputs[0];
@@ -44,7 +57,12 @@ class Counter
         return $loop;
     }
 
-    function orderInputs($start, $end) : array
+    /**
+    * Order Inputs. Order Asc for params $start and $end
+    * @param int $start
+    * @param int $end
+    */
+    function orderInputs(int $start,int $end) : array
     {
         //TODO: optimize when i can use more than 1 if
         $inputs= array('start' => $start, 'end' => $end);
@@ -57,9 +75,13 @@ class Counter
         return ($orderedInputs);
     }
 
+    /**
+    * Add Common Multiple. Add to replaces array the common multiple value
+    */
     private function addCommonMultiple() : void
     {
         $this->commonMultiple = 1;
+
         foreach (array_keys($this->stringsToReplace) as $number) {
             $this->commonMultiple *= $number;
         }
@@ -67,9 +89,13 @@ class Counter
         $this->stringsToReplace[$this->commonMultiple] = $this->commonMultipleText;
     }
 
-    private function parseNumber($number) : string
+    /**
+    * Parse Number. Replace numbers for text when it's needed
+    * @param int $number
+    */
+    private function parseNumber(int $number) : string
     {
-        $return = $number;
+        $return = intval($number);
 
         foreach ($this->stringsToReplace as $divisor => $value) 
         {
@@ -84,17 +110,5 @@ class Counter
         
     }
 }
- 
-
-$start = $_POST['start'];
-$end = $_POST['end'];
-$replaces = array(
-    $_POST['replaceNumber1'] => $_POST['replaceText1'],
-    $_POST['replaceNumber2'] => $_POST['replaceText2']
-);
-$commonMultipleText = $_POST['commonMultipleText'];
-
-$counter = new Counter($start, $end, $replaces, $commonMultipleText);
-$counter->initView();
 
 ?>

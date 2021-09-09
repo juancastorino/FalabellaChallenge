@@ -4,6 +4,12 @@
             "App\\": "src/"
         }
     },
+    "authors": [
+        {
+            "name": "Juan Castorino",
+            "email": "juancastorino@hotmail.com"
+        }
+    ],
     "require": {
         "php": ">=7.2.5"
     },
