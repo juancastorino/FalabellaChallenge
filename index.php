@@ -1,8 +1,6 @@
 <?php
 require './vendor/autoload.php';
-require './src/Controller/CounterController.php';
-require './src/Controller/WelcomeController.php';
-
+ 
 use App\Controller\Welcome;
 use App\Controller\Counter;
 

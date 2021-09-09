@@ -1,9 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-
 use App\Controller\Counter;
-// require((__DIR__.'/../src/Controller/CounterController.php'));
 
 class CounterTest extends TestCase
 {
@@ -21,8 +19,7 @@ class CounterTest extends TestCase
     public function testCreateCounterWithDefaultValues()
     {
         $counter = new Counter();
-        $result = count($counter->initLoop());
-        $this->assertSame(100, $result);
+        $this->assertSame(100, count($counter->initLoop()));
     }
 
     public function testValidateCommonMultipleReplace()
