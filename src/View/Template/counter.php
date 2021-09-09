@@ -14,13 +14,14 @@
         <div class="container-fluid">
             <img src="https://images.contentstack.io/v3/assets/blt928898215b35efe2/blt0daf5895f6b8b295/60e7235936954912f039847b/sis-fcom-logo.svg"
                 alt="fallabella" width="200" height="auto">
-            <a class="navbar-brand" href="./index.php">Go back</a>
+                
+            <a class="navbar-brand btn btn-light text-secondary" href="./index.php">Go back</a>
         </div>
     </nav>
 
  
 
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
         <div class="h1">Numbers</div>
         <table class="table table-success table-striped">
             <thead>
@@ -33,8 +34,12 @@
                 {{ numbersData }}
             </tbody>
         </table>
-    </div>
 
+    </div>
+    <div class='container d-flex justify-content-center'>
+            <a class="col-5 navbar-brand btn btn-success mb-5" href="./index.php">Go back</a>
+            <a class="col-5 navbar-brand btn btn-danger mb-5" href="./index.php">Go to Github</a>
+        </div>
 </body>
 
 </html>

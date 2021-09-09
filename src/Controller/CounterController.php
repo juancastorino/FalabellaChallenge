@@ -18,7 +18,6 @@ class Counter
     * @param int $end
     * @param array $stringsToReplace
     * @param string $commonMultipleText
-    * 
     */
     public function __construct
     (
@@ -28,12 +27,12 @@ class Counter
         string $commonMultipleText = 'Integracion'
     )
     {
-        $orderedInputs = $this->orderInputs($start, $end);
+        $orderedInputs = $this->orderInputs(htmlspecialchars($start), htmlspecialchars($end));
         $this->start = $orderedInputs[0];
         $this->end = $orderedInputs[1]; 
 
-        $this->stringsToReplace = $stringsToReplace;
-        $this->commonMultipleText = $commonMultipleText;
+        $this->stringsToReplace = $this->sanitizeStringsToReplace($stringsToReplace);
+        $this->commonMultipleText = htmlspecialchars($commonMultipleText);
         $this->addCommonMultiple();
  
     }
@@ -55,6 +54,19 @@ class Counter
             $loop[$this->start] = $this->parseNumber($this->start);
         }
         return $loop;
+    }
+
+    /**
+    * Sanitize Replace Customization by the users.
+    * @param array $stringsToReplace
+    */
+    function sanitizeStringsToReplace(array $stringsToReplace):array 
+    {
+        $clean = [];
+        foreach ($stringsToReplace as $key => $value) {
+           $clean[htmlspecialchars($key)] = htmlspecialchars($value); 
+        }
+        return $clean;
     }
 
     /**

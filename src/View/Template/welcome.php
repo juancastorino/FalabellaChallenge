@@ -72,7 +72,7 @@
                 </tbody>
             </table>
             <div class="d-grid gap-2 col-8 mx-auto mt-5">
-                <button class="btn btn-success" type="submit">Go for it!</button>
+                <button class="btn btn-success mb-5" type="submit">Go for it!</button>
             </div>
         </form>
     </body>
