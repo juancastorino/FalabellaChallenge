@@ -23,7 +23,7 @@ if($_POST){
                 <img src="https://images.contentstack.io/v3/assets/blt928898215b35efe2/blt0daf5895f6b8b295/60e7235936954912f039847b/sis-fcom-logo.svg"
                     alt="fallabella" width="200" height="auto">
 
-                <a class="navbar-brand" href="http://github.com/juancastorino/">by Juan Castorino</a>
+                <a class="navbar-brand" href="https://github.com/juancastorino/FalabellaChallenge">by Juan Castorino</a>
 
             </div>
             </div>
