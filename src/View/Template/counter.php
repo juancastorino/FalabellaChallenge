@@ -18,7 +18,7 @@
 
             <a class="navbar-brand" href="./index.php">Volver</a>
 
-        </div>
+
         </div>
     </nav>
 
