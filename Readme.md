@@ -16,9 +16,9 @@
 
 <h3 align="center">Fully Customizable List and Replaces</h3>
 
-<p>&nbsp;<img align="center" width="300px" src="https://github.com/juancastorino/FalabellaChallenge/blob/master/images/Falabella_desktop.jpg" alt="Desktop" /></p>
+<p>&nbsp;<img align="center" width="600px" src="https://github.com/juancastorino/FalabellaChallenge/blob/master/images/Falabella_desktop.jpg" alt="Desktop" /></p>
 
-<p>&nbsp;<img align="center" width="300px" src="https://github.com/juancastorino/FalabellaChallenge/blob/master/images/Falabella_desktop_list.jpg" alt="Desktop List" /></p>
+<p>&nbsp;<img align="center" width="600px" src="https://github.com/juancastorino/FalabellaChallenge/blob/master/images/Falabella_desktop_list.jpg" alt="Desktop List" /></p>
 
 <h3 align="center">Fully Responsive Interface</h3>
  
