@@ -12,6 +12,12 @@
 - PhpUnit 9
 - Boostrap 5
 
+## FLUTTER VERSION OF THE CHALLENGE!!!!
+
+- Flutter 2
+- Provider
+- View my challenge in Flutter <a href='https://github.com/juancastorino/FalabellaChallengeFlutter'>HERE</a>
+
 ## Results ⚡
 
 <h3 align="center">Fully Customizable List and Replaces</h3>
