@@ -1,6 +1,7 @@
 ## Falabella Challenge.
 
 - Prints all the numbers from 1 to 100
+- Replace 3 = 'Falabella', 5 = 'IT', Common multiple = 'Integraciones'
 - Only 1 If
 - You can't use `else`, `else if` or ternary
 - Unit tests
