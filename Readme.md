@@ -19,6 +19,12 @@
 - Provider
 - View my challenge in Flutter <a href='https://github.com/juancastorino/FalabellaChallengeFlutter'>HERE</a>
 
+## VUE VERSION!!
+
+- Vue 3 (I just learning and practicing with VUE)
+- Provider
+- View my challenge in VUE <a href='https://github.com/juancastorino/FalabellaChallengeVue'>HERE</a>
+
 ## Results ⚡
 
 <h3 align="center">Fully Customizable List and Replaces</h3>
